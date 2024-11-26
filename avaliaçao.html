@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário CRUD - Alternativo</title>
+    <link rel="stylesheet" href="avaliaçao_2.css">
+</head>
+<body>
+    <div class="main-container">
+        <h2>Cadastro de Usuários</h2>
+
+        <form id="form" class="form-container" onsubmit="submitForm(event)">
+            <div id="formErrors" class="error-message"></div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required placeholder="Nome completo">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" required placeholder="Sua idade">
+
+            <button type="submit">Salvar</button>
+        </form>
+
+        <div class="table-container">
+            <h3>Usuários Cadastrados</h3>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Idade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="avaliaçao_3.js"></script>
+</body>
+</html>
